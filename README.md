@@ -158,5 +158,3 @@ The `Variable` module builds on the `Tensor` module, adding automatic differenti
 - Machine learning functions: `sigmoid`, `leaky_relu`, `softmax`, `binary_cross_entropy`
 - Visualization: `visualize`
 
-## License
-

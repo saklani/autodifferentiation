@@ -1,0 +1,9 @@
+(library
+ (name tensor)
+ (modules tensor)
+ (libraries core))
+
+(library
+ (name variable)
+ (modules variable)
+ (libraries core tensor))

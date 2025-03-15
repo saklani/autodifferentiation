@@ -1,0 +1,13 @@
+(rule
+ (target project.zip)
+ (deps
+  src/lib/tensor.mli
+  src/lib/variable.mli
+  src/lib/dune
+  test/dune
+  
+  examples/simple.ml
+  examples/nn.ml
+  )
+ (action
+  (run zip -R project.zip %{deps})))

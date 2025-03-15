@@ -1,0 +1,13 @@
+(test
+ (name tensor_tests)
+ (modules tensor_tests)
+ (libraries core ounit2 tensor variable)
+ (preprocess
+  (pps ppx_jane)))
+
+(test
+ (name variable_tests)
+ (modules variable_tests)
+ (libraries core ounit2 variable tensor)
+ (preprocess
+  (pps ppx_jane)))
